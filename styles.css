@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: montserrat;
+  color: #515076;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.product-card {
+  padding: 25px;
+  margin: 45px;
+  background-color: #F7F7FA;
+  width: 340px;
+  height: 573px;
+  box-sizing: border-box;
+}
+
+.product-picture {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.skin-type {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #A5A3B9;
+}
+
+.product-name {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.product-description {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.product-composition {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.product-composition-list {
+  list-style-type: circle;
+  padding-left: 12px; 
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.product-components {
+  margin-bottom: 5px;
+}
+
+.price-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-label,
+.price-tag {
+  font-size: 20px;
+  line-height: 24px;
+}
