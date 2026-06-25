@@ -5,6 +5,7 @@ body {
   color: #515076;
   font-size: 13px;
   line-height: 18px;
+  display: flex;
 }
 
 .product-card {
