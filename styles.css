@@ -4,15 +4,19 @@ body {
 font-family: montserrat;
 color: #515076;
 margin: 0;
-padding-left: 85px;
-padding-right: 85px;
 font-size: 13px;
 line-height: 18px;
+}
 
-background-image: url(img/background-image.png);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
+.background-pattern-flowers {
+  height: 790px;
+  width: 697px;
+  
+  position: absolute;
+  top: 0;
+  left: 135px;
+
+  z-index: -1;
 }
 
 .title {
