@@ -3,24 +3,52 @@
 body {
   font-family: montserrat;
   color: #515076;
+  margin: 0;
   font-size: 13px;
   line-height: 18px;
+}
+
+.background-pattern-flowers {
+  height: 697px;
+  width: 790px;
+  position: absolute;
+  top: 0;
+  left: 135px;
+  z-index: -1;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 110px;
+  margin-top: 220px;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 78px
+}
+
+.products-showcase {
+  margin-top: 0;
+  margin-bottom: 116px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
 }
 
 .product-card {
+  cursor: pointer;
   padding: 25px;
-  margin: 45px;
   background-color: #F7F7FA;
   width: 340px;
   height: 573px;
   box-sizing: border-box;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .product-picture {
-    display: block;
-    margin: 0;
-    padding: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .skin-type {
@@ -50,8 +78,8 @@ body {
 }
 
 .product-composition-list {
-  list-style-type: circle;
-  padding-left: 12px; 
+  list-style-image: url(img/list-type.svg);
+  padding-left: 12px;
   margin-top: 0;
   margin-bottom: 25px;
 }
