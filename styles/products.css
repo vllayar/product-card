@@ -8,6 +8,6 @@
 
 .products__item {
   width: 340px;
-  height: 573px;
+  height: auto;
   cursor: pointer;
 }
