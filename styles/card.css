@@ -39,7 +39,7 @@
 
 .card__compound-element {
   list-style: none;
-  background: url('img/list-type.svg') left center no-repeat;
+  background: url('../img/list-type.svg') left center no-repeat;
   padding-left: 15px;
   margin-bottom: 5px;
 }
