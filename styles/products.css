@@ -1,0 +1,13 @@
+.products {
+  display: flex;
+  gap: 45px;
+  row-gap: 45px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.products__item {
+  width: 340px;
+  height: auto;
+  cursor: pointer;
+}
