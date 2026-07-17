@@ -20,7 +20,7 @@ changeAllCarsdColor.addEventListener('click', () => {
   allProductCards.forEach((card) => {
     card.style.backgroundColor = accentColorHash;
     card.style.color = 'white';
-})
+  })
 });
 
 // Переход на гугл поисковик
