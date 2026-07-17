@@ -1,25 +1,29 @@
-// Покраска первой карточки
+const accentColorHash = '#515076';
 const firstProductCard = document.querySelector('.products__item');
 const changeFirstCardColor = document.querySelector('#change-first-card-color-btn');
+const allProductCards = document.querySelectorAll('.products__item');
+const changeAllCarsdColor = document.querySelector('#change-all-cards-color-btn');
+const openGoogleButton = document.querySelector('#open-google-btn');
+const googleLink = 'https://google.com';
+const outputConsoleLogButton = document.querySelector('#output-console-log-btn');
+const pageTitle = document.querySelector('.title');
+const colorChangeButton = document.querySelector('#change-button-color-btn');
 
+// Покраска первой карточки
 changeFirstCardColor.addEventListener('click', () => {
-  firstProductCard.style.backgroundColor = '#515076';
+  firstProductCard.style.backgroundColor = accentColorHash;
   firstProductCard.style.color = 'white';
 })
 
 // Покраска всех карточек
-const allProductCards = document.querySelectorAll('.products__item');
-const changeAllCarsdColor = document.querySelector('#change-all-cards-color-btn');
-
 changeAllCarsdColor.addEventListener('click', () => {
-  allProductCards.forEach((background) => background.style.backgroundColor = '#515076')
-  allProductCards.forEach((fontColor) => fontColor.style.color = 'white')
+  allProductCards.forEach((card) => {
+    card.style.backgroundColor = accentColorHash;
+    card.style.color = 'white';
 })
+});
 
 // Переход на гугл поисковик
-const openGoogleButton = document.querySelector('#open-google-btn');
-const googleLink = 'https://google.com';
-
 openGoogleButton.addEventListener('click', openGoogle);
 
 function openGoogle() {
@@ -33,8 +37,6 @@ function openGoogle() {
 }
 
 // Выведение сообщения в консоль
-const outputConsoleLogButton = document.querySelector('#output-console-log-btn');
-
 outputConsoleLogButton.addEventListener('click', () => outputConsoleLog('ДЗ №6'));
 
 function outputConsoleLog(message) {
@@ -43,8 +45,6 @@ function outputConsoleLog(message) {
 }
 
 // Выведение заголовка в консоль
-const pageTitle = document.querySelector('.title');
-
 pageTitle.addEventListener('mouseenter', outputTitle)
 
 function outputTitle(event) {
@@ -53,11 +53,7 @@ function outputTitle(event) {
   console.log(textInside);
 }
 
-const title = document.querySelector('.title');
-
 // Кнопка меняющая цвет
-const colorChangeButton = document.querySelector('#change-button-color-btn');
-
 colorChangeButton.addEventListener('click', changeColor);
 
 function changeColor() {
