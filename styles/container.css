@@ -1,4 +1,7 @@
 .container {
   max-width: 1110px;
   position: relative;
+  background-image: url("../img/background-pattern-flowers.png");
+  background-repeat: no-repeat;
+  background-position: top left;
 }

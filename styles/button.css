@@ -1,0 +1,50 @@
+.buttons {
+  padding: 0;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+#change-first-card-color-btn,
+#change-all-cards-color-btn,
+#reset-all-cards-color-btn,
+#open-google-btn,
+#output-console-log-btn,
+#change-button-color-btn {
+  width: 300px;
+  background-color: #F7F7FA;
+  color: #515076;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  transition: color 0.15s, background-color 0.15s;
+}
+
+#change-first-card-color-btn:hover,
+#change-all-cards-color-btn:hover,
+#reset-all-cards-color-btn:hover,
+#open-google-btn:hover,
+#output-console-log-btn:hover {
+  background-color: #515076;
+  color: #F7F7FA;
+}
+
+#change-first-card-color-btn:active,
+#change-all-cards-color-btn:active,
+#reset-all-cards-color-btn:active,
+#open-google-btn:active,
+#output-console-log-btn:active {
+  background-color: #515076b4;
+}
+
+.change-self-color-btn-accent {
+  background-color: #515076 !important;
+  color: #F7F7FA !important;
+}
+

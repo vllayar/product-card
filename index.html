@@ -7,23 +7,22 @@
   <title>BEM Experiment</title>
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/container.css">
-  <link rel="stylesheet" href="styles/background.css">
   <link rel="stylesheet" href="styles/title.css">
   <link rel="stylesheet" href="styles/products.css">
   <link rel="stylesheet" href="styles/card.css">
+  <link rel="stylesheet" href="styles/button.css">
 </head>
 
 <body>
   <main class="main">
     <div class="container">
-      
       <section>
-        <img src="img/background-pattern-flowers.png" class="background-pattern">
         <h1 class="title">Выбери свой продукт</h1>
         <ul class="products">
           <!-- MOISTURIZING MOUSSE -->
           <li class="products__item card">
-            <img src="img/moisturizing-mousse.jpg" alt="a picture of a bottle of moisturizing mousse" class="card__image">
+            <img src="img/moisturizing-mousse.jpg" alt="a picture of a bottle of moisturizing mousse"
+              class="card__image">
             <div class="card__category">для нормальной кожи</div>
             <div class="card__title">Увлажняющий мусс</div>
             <div class="card__description">Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</div>
@@ -94,7 +93,8 @@
             <img src="img/gift-pack-5.jpg" alt="a bottle of washing gel" class="card__image">
             <div class="card__category">для нормальной кожи</div>
             <div class="card__title">Подарочный набор №5</div>
-            <div class="card__description">Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</div>
+            <div class="card__description">Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.
+            </div>
             <div class="card__compound-label">Состав:</div>
             <ul class="card__compound-list">
               <li class="card__compound-element">воски</li>
@@ -107,9 +107,18 @@
             </div>
           </li>
         </ul>
+        <section class="buttons">
+          <button id="change-first-card-color-btn">Поменять цвет первой карточки</button>
+          <button id="change-all-cards-color-btn">Поменять цвет всех карточек</button>
+          <button id="reset-all-cards-color-btn">Восстановить цвет всех карточек</button>
+          <button id="open-google-btn">Открыть Google</button>
+          <button id="output-console-log-btn">Вывести сообщение в консоль</button>
+          <button class="change-self-color-btn" id="change-button-color-btn">Поменять цвет кнопки</button>
+        </section>
       </section>
     </div>
   </main>
+  <script src="main.js"></script>
 </body>
 
 </html>
