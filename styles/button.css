@@ -32,7 +32,7 @@
 #open-google-btn:hover,
 #output-console-log-btn:hover {
   background-color: #515076;
-  color: white;
+  color: #F7F7FA;
 }
 
 #change-first-card-color-btn:active,
@@ -45,6 +45,6 @@
 
 .change-self-color-btn-accent {
   background-color: #515076 !important;
-  color: white !important;
+  color: #F7F7FA !important;
 }
 

@@ -1,4 +1,5 @@
 const accentColorHash = '#515076';
+const primaryColorHash = '#F7F7FA';
 const firstProductCard = document.querySelector('.products__item');
 const changeFirstCardColor = document.querySelector('#change-first-card-color-btn');
 const allProductCards = document.querySelectorAll('.products__item');
@@ -13,21 +14,21 @@ const colorChangeButton = document.querySelector('#change-button-color-btn');
 // Покраска первой карточки
 changeFirstCardColor.addEventListener('click', () => {
   firstProductCard.style.backgroundColor = accentColorHash;
-  firstProductCard.style.color = 'white';
+  firstProductCard.style.color = primaryColorHash;
 })
 
 // Покраска всех карточек
 changeAllCardsColor.addEventListener('click', () => {
   allProductCards.forEach((card) => {
     card.style.backgroundColor = accentColorHash;
-    card.style.color = 'white';
+    card.style.color = primaryColorHash;
   })
 });
 
 // Восстановление цвета всех карточек
 resetAllCardsColor.addEventListener('click', () => {
   allProductCards.forEach((card) => {
-    card.style.backgroundColor = 'white';
+    card.style.backgroundColor = primaryColorHash;
     card.style.color = accentColorHash;
   })
 });
