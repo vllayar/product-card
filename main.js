@@ -2,7 +2,7 @@ const accentColorHash = '#515076';
 const firstProductCard = document.querySelector('.products__item');
 const changeFirstCardColor = document.querySelector('#change-first-card-color-btn');
 const allProductCards = document.querySelectorAll('.products__item');
-const changeAllCarsdColor = document.querySelector('#change-all-cards-color-btn');
+const changeAllCardsColor = document.querySelector('#change-all-cards-color-btn');
 const openGoogleButton = document.querySelector('#open-google-btn');
 const googleLink = 'https://google.com';
 const outputConsoleLogButton = document.querySelector('#output-console-log-btn');
@@ -16,7 +16,7 @@ changeFirstCardColor.addEventListener('click', () => {
 })
 
 // Покраска всех карточек
-changeAllCarsdColor.addEventListener('click', () => {
+changeAllCardsColor.addEventListener('click', () => {
   allProductCards.forEach((card) => {
     card.style.backgroundColor = accentColorHash;
     card.style.color = 'white';
