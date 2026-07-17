@@ -10,6 +10,7 @@
 
 #change-first-card-color-btn,
 #change-all-cards-color-btn,
+#reset-all-cards-color-btn,
 #open-google-btn,
 #output-console-log-btn,
 #change-button-color-btn {
@@ -27,6 +28,7 @@
 
 #change-first-card-color-btn:hover,
 #change-all-cards-color-btn:hover,
+#reset-all-cards-color-btn:hover,
 #open-google-btn:hover,
 #output-console-log-btn:hover {
   background-color: #515076;
@@ -35,6 +37,7 @@
 
 #change-first-card-color-btn:active,
 #change-all-cards-color-btn:active,
+#reset-all-cards-color-btn:active,
 #open-google-btn:active,
 #output-console-log-btn:active {
   background-color: #515076b4;

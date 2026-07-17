@@ -3,6 +3,7 @@ const firstProductCard = document.querySelector('.products__item');
 const changeFirstCardColor = document.querySelector('#change-first-card-color-btn');
 const allProductCards = document.querySelectorAll('.products__item');
 const changeAllCardsColor = document.querySelector('#change-all-cards-color-btn');
+const resetAllCardsColor = document.querySelector('#reset-all-cards-color-btn');
 const openGoogleButton = document.querySelector('#open-google-btn');
 const googleLink = 'https://google.com';
 const outputConsoleLogButton = document.querySelector('#output-console-log-btn');
@@ -20,6 +21,14 @@ changeAllCardsColor.addEventListener('click', () => {
   allProductCards.forEach((card) => {
     card.style.backgroundColor = accentColorHash;
     card.style.color = 'white';
+  })
+});
+
+// Восстановление цвета всех карточек
+resetAllCardsColor.addEventListener('click', () => {
+  allProductCards.forEach((card) => {
+    card.style.backgroundColor = 'white';
+    card.style.color = accentColorHash;
   })
 });
 
