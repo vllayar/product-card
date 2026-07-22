@@ -21,4 +21,21 @@ currentBudget >= productPrice ? console.log(`${product} purchased. Thank you for
 : console.log(`You are ${productPrice - currentBudget} dollars short. Fill your balance. You need to replenish the balance.`);
 }
 
+// EXTRA FUNCTION AND VARIABLE DECLARATIONS
+let moscowTemperature = 34;
+let astanaTemperature = 83;
+let dubaiTemperature = 48;
 
+
+function convertTemperature (degree, from, to) {
+  from === 'celcius' && to === 'fahrenheit' ? console.log(`The temperature is ${result = degree * 9 / 5 + 32} degrees fahrenheit.`)
+  : from === 'fahrenheit' && to === 'celcius' ? console.log(`The temperature is ${result = (degree - 32) * 5 / 9} degrees celcius`)
+  : from === to ? console.log(`The temperature is ${from} degrees celcius.`)
+  : from !== 'fahrenheit' && from !== 'celcius' ? console.log(`The unit ${from} is unidentified.`)
+  : console.log(`The unit ${to} is unidentified.`);
+}
+
+convertTemperature(moscowTemperature, 'celcius', 'fahrenheit');
+convertTemperature(astanaTemperature, 'fahreneit', 'celius');
+convertTemperature(dubaiTemperature, 'cm', 'celcius');
+convertTemperature(45, 'fahreneit', 'kg');
