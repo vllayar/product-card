@@ -14,7 +14,8 @@ speed > lightSpeed ? console.log('Superluminal speed.')
 
 // PURCHASE ATTEMPT
 let product = 'Bottle of water';
-let productPrice = '$2';
+let productPrice = 2;
+let currentBudget = 10;
 
 function y(currentBudget) {
 currentBudget >= productPrice ? console.log(`${product} purchased. Thank you for shopping!`)
