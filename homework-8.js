@@ -28,25 +28,26 @@ console.log(dodge.owner);
 
 // Task 5
 function hasMaximumSpeed(car) {
-  if (Object.hasOwn(car, 'maximumSpeed')) {
-    return true;
-  } else {
-    car.maximumSpeed = 320;
-  }
+  return Object.hasOwn(car, 'maximumSpeed')
 }
 
-hasMaximumSpeed(dodge);
+function addSpeed(car, speed) {
+  if (!hasMaximumSpeed(car))
+    car.maximumSpeed = speed;
+}
+
+addSpeed(dodge, 320);
 
 console.log('Task 5');
 console.log(dodge.maximumSpeed);
 
 // Task 6
-function logObjectValue(object) {
-  console.log(object.maximumSpeed);
+function logObjectValue(object, property) {
+  console.log(object[property]);
 }
 
 console.log('Task 6')
-logObjectValue(dodge);
+logObjectValue(dodge, 'maximumSpeed');
 
 // Task 7
 const productsList = ['bread', 'milk', 'eggs', 'butter', 'chicken'];
