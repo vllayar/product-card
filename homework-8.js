@@ -41,12 +41,12 @@ console.log('Task 5');
 console.log(dodge.maximumSpeed);
 
 // Task 6
-function logObjectValue(object, property) {
-  console.log(property);
+function logObjectValue(object) {
+  console.log(object.maximumSpeed);
 }
 
 console.log('Task 6')
-logObjectValue(dodge, dodge.maximumSpeed);
+logObjectValue(dodge);
 
 // Task 7
 const productsList = ['bread', 'milk', 'eggs', 'butter', 'chicken'];
