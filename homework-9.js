@@ -1,3 +1,5 @@
+import { comments } from './comment.js';
+
 // TASK 2
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const newNumbers = numbers.slice(4, 10);
@@ -14,3 +16,7 @@ function reverseArray(array) {
 }
 console.log(reverseArray(numbers));
 console.log(reverseArray(drinks));
+
+// TASK 6
+const comEmails = comments.filter(comment => comment.email.includes('.com'));
+console.log(comEmails);
