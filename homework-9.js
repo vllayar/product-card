@@ -34,3 +34,10 @@ const commentAuthors = comments.map(comment => ({
   name: comment.name
 }));
 console.log(commentAuthors);
+
+// TASK 10
+const validComments = comments.map(comment => ({
+  ...comment,
+  isInvalid: comment.body.length > 180
+}))
+console.log(validComments);
