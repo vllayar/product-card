@@ -41,3 +41,13 @@ const validComments = comments.map(comment => ({
   isInvalid: comment.body.length > 180
 }))
 console.log(validComments);
+
+// TASK 11
+const commentEmailsReduced = comments.reduce((accumulator, comment) => {
+  accumulator.push(comment.email);
+  return accumulator;
+}, [])
+console.log(commentEmailsReduced);
+
+const commentAuthorEmails = comments.map(comment => comment.email);
+console.log(commentAuthorEmails);
