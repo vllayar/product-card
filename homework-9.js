@@ -51,3 +51,9 @@ console.log(commentEmailsReduced);
 
 const commentAuthorEmails = comments.map(comment => comment.email);
 console.log(commentAuthorEmails);
+
+// TASK 12
+const stringComments = commentAuthorEmails.toString();
+const dashedComments = commentAuthorEmails.join(' - ');
+console.log(stringComments);
+console.log(dashedComments);
