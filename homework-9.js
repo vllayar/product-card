@@ -7,3 +7,10 @@ console.log(`Task 2\n${newNumbers}`);
 const drinks = ['tea', 'coffee', 'juice', 'milk', 'lemonade', 'cocktail'];
 console.log(drinks.includes('coffee'));
 console.log(drinks.includes('wine'));
+
+// TASK 4
+function reverseArray(array) {
+  return array.reverse();
+}
+console.log(reverseArray(numbers));
+console.log(reverseArray(drinks));
