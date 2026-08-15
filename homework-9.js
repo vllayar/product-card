@@ -17,6 +17,13 @@ function reverseArray(array) {
 console.log(reverseArray(numbers));
 console.log(reverseArray(drinks));
 
-// TASK 6
+// TASK 7
 const comEmails = comments.filter(comment => comment.email.includes('.com'));
 console.log(comEmails);
+
+// TASK 8
+const newComments = comments.map(comment => ({
+  ...comment,
+  postId: comment.id <= 5 ? 2: 1
+}))
+console.log(newComments);
