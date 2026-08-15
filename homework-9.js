@@ -3,7 +3,7 @@ import { comments } from './comment.js';
 // TASK 2
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const newNumbers = numbers.slice(4, 10);
-console.log(`Task 2\n${newNumbers}`);
+console.log(newNumbers);
 
 // TASK 3
 const drinks = ['tea', 'coffee', 'juice', 'milk', 'lemonade', 'cocktail'];
@@ -27,3 +27,10 @@ const newComments = comments.map(comment => ({
   postId: comment.id <= 5 ? 2: 1
 }))
 console.log(newComments);
+
+// TASK 9
+const commentAuthors = comments.map(comment => ({
+  id: comment.id,
+  name: comment.name
+}));
+console.log(commentAuthors);
