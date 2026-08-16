@@ -2,7 +2,7 @@ import { comments } from './comment.js';
 
 // TASK 2
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const newNumbers = numbers.slice(4, 10);
+const newNumbers = numbers.filter(number => number >= 5);
 console.log(newNumbers);
 
 // TASK 3
